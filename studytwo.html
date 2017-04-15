@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>savina monet</title>
+
+<link rel="stylesheet" type="text/css" href="style/page.css" />
+<link rel="stylesheet" type="text/css" href="style/menu.css" />
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<meta>
+</head>
+<style>
+html {
+	background: #111;
+}
+
+.studycontent {
+	background: url("cware2.jpg") no-repeat center center;
+}
+</style>
+<body>
+	<div class="navbar">
+		<div class="navwrapper">
+			<div class="logo clear">
+				<a href="index.html"><img src="logo.png"> </a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="casestudies.html">Case Studies</a></li>
+					<li><a href="#" id="contact">Contact</a></li>
+					<!-- <li><a href="#" class="open-menu">Menu</a></li> -->
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="studycontent"></div>
+	<div class="text">
+		<h1>C-Ware, Inc.</h1>
+		<h5>2016</h5>
+		<div class="contentdetail">
+			<p class="tag casetwo">Summary</p>
+			<p class="paragraph">One of most known and influential fashion
+				designers — Stella McCartney — teamed up with Adidas, to bring the
+				latest styles in sport and casual fashion. MediaMonks produced brand
+				website for new collection from Adidas designed by Stella. Model
+				Karlie Kloss became the face of the campaign.</p>
+		</div>
+		<div class="contentdetail">
+			<p class="tag casetwo">Problem</p>
+			<p class="paragraph">My task was to create a subpage for
+				interview with Stella McCartney. The whole website was made to be
+				selling and all pages would lead users to products and invite them
+				to buy them. But the interview page generally consists of questions
+				and answers — so the main problem that occurred is: How to make this
+				page more selling and not make it users end point?</p>
+		</div>
+		<div class="contentdetail">
+			<p class="tag casetwo">Solution</p>
+			<p class="paragraph">The pages are setup so that Stella McCartney
+				is always featured on the right side and products on the left. This
+				way we alternate between them and tie Stella’s story to the products
+				she creates. Each product slide has a link back to that specific
+				category. This way users journey always ends in a product discovery.</p>
+		</div>
+		<div class="contentdetail">
+			<p class="tag casetwo">Design Process</p>
+			<p class="paragraph">Following the style other pages were made, I
+				had to create a page for interview with Stella McCartney which would
+				fit perfectly into context. I had decided to go with vertically
+				split layout where on one side there would be question and answer,
+				and on the other picture of Stella or her product. This way the page
+				would feel more vibrant and interesting than just displaying plain
+				text.</p>
+		</div>
+		<div class="contentdetail">
+			<p class="tag casetwo">Role</p>
+			<p class="paragraph">I worked in a team of designers where art
+				direction and layout were already set. I had to adapt to that style
+				and apply it in my task. I was tasked with creating desktop and
+				mobile page for an interview with Stella McCartney.</p>
+		</div>
+	</div>
+
+	<div class="contact-block is-hidden">
+		<p>
+			<a href="mailto:#">Email</a>
+		</p>
+		<p>Tel: 206 370 4351</p>
+		<p>
+			PO BOX 555 <br> Wilsonville, OR 97070
+		</p>
+		<p class="contactheader">contact me</p>
+	</div>
+</body>
+<script>
+	$(document).ready(function() {
+		/*! Fades in whole page on load */
+		$('.studycontent, .text').css('display', 'none');
+		$('.studycontent').fadeIn(800, function() {
+			$('.text').fadeIn(700);
+		});
+	});
+</script>
+<script>
+	$('#contact').click(function(event) {
+		event.stopPropagation();
+		$('.contact-block').toggle();
+	});
+
+	$(document).click(function() {
+		$('.contact-block').hide();
+	});
+</script>
+</html>

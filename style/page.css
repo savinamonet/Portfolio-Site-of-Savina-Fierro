@@ -1,0 +1,192 @@
+body {
+	margin: 0;
+	background-color: #111;
+	color: white;
+	font-family: Inconsolata, sans-serif;
+	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+h1 {
+	font-size: 50px;
+	position: relative;
+	bottom: 1.2em;
+}
+
+h5 {
+	margin: 0;
+	position: absolute;
+	top: 78%;
+	left: 70%;
+}
+
+*:after {
+	clear: both;
+}
+
+.navbar {
+	width: 100%;
+	display: inline-block;
+	position: fixed;
+	top: 0;
+}
+
+.navbar::after {
+	clear: both;
+}
+
+.navwrapper {
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 25px 0;
+}
+
+.logo {
+	float: left;
+}
+
+.logo a {
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+
+.navbar nav {
+	float: right;
+}
+
+.navbar nav ul {
+	list-style: none;
+}
+
+.navbar nav ul li {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.navbar nav ul li a {
+	margin-right: 30px;
+	font-family: 'Inconsolata', sans-serif;
+}
+
+.content {
+	max-width: 80%;
+	margin: 200px auto 0 auto;
+}
+
+.content p, .tag {
+	padding: 10px 5px;
+	display: inline;
+}
+
+.content p {
+	background-color: #68268C;
+}
+
+.caseone {
+	background-color: #ff6600;
+}
+
+.casetwo{ background-color: #00A401;}
+
+.casethree{background-color: #518AC8;}
+
+.casefour{background-color: #CC9900;}
+
+.content ul {
+	list-style: none;
+}
+
+.content li {
+	display: inline-block;
+}
+
+.content ul li a {
+	font-size: 60px;
+	text-decoration: underline;
+	padding: 0 20px;
+}
+
+.bg {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+.content ul li a:nth-child(1) {
+	padding-left: 0;
+}
+
+.content li:first-child:hover ~ .bg {
+	background: url(../rwc2.jpg) no-repeat center;
+}
+
+.content li:nth-child(2):hover ~ .bg {
+	background: url(../cware2.jpg) no-repeat center;
+}
+
+.content li:nth-child(3):hover ~ .bg {
+	background: url(../prograss2.jpg) no-repeat center;
+}
+
+.content li:nth-child(4):hover ~ .bg {
+	background: url(../test.jpeg) no-repeat center;
+}
+
+.contact-block {
+	height: 300px;
+	width: 300px;
+	z-index: 9999;
+	background-color: #21E360;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 180px 30px 20px 30px;
+	font-size: 25px;
+}
+
+.is-hidden {
+	display: none;
+}
+
+.contactheader {
+	transform: rotate(90deg);
+	position: relative;
+	top: -180px;
+	left: 120px;
+	font-size: 30px;
+	color: black;
+}
+
+.contact-block a {
+	text-decoration: underline;
+}
+
+.studycontent {
+	margin-top: 200px;
+	height: 500px;
+}
+
+.text {
+	max-width: 30%;
+	margin: 30px auto;
+}
+
+.paragraph {
+	font-size: 18px;
+	line-height: 1.25;
+	padding: 10px;
+}
+
+.contentdetail {
+	margin-bottom: 100px;
+}
