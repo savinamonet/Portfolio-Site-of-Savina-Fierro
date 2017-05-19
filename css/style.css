@@ -643,3 +643,40 @@ p.viewmore {
 		display: none;
 	}
 }
+
+@media all and (min-width: 350px) {
+	.greeting {
+		font-size: 0.9em;
+		margin-top: 129.5%;
+	}
+	#group3 {
+		height: 132vh;
+	}
+	#group3 .parallax__layer--base {
+		height: 127vh;
+	}
+	.case.flex.row {
+		margin-bottom: 3em;
+	}
+	.flex.grid {
+		margin-right: 2%;
+	}
+	.titlebox2 {
+		top: 62%;
+	}
+	.parallax {
+		font-size: 150%;
+	}
+	.casetitle {
+		left: -188px;
+	}
+	.square {
+		height: 62vh;
+	}
+	.flex.column.skillset {
+		height: 62vh;
+	}
+	p.viewmore {
+		font-size: 0.8em;
+	}
+}
