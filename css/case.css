@@ -113,7 +113,7 @@ p.case-header {
 	}
 }
 
-@media all and (min-width: 350px) {
+@media all and (max-width: 450px) {
 	.case_img {
 		height: 85vh;
 	}

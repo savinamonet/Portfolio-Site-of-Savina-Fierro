@@ -644,7 +644,7 @@ p.viewmore {
 	}
 }
 
-@media all and (min-width: 350px) {
+@media all and (max-width: 450px) {
 	.greeting {
 		font-size: 0.9em;
 		margin-top: 129.5%;
