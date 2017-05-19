@@ -189,6 +189,11 @@ img {
 	flex-direction: column;
 }
 
+.flex.column.bordernav {
+	height: 100vh;
+	justify-content: center;
+}
+
 a {
 	color: #1340b7;
 }
@@ -241,8 +246,7 @@ a {
 	transform: rotate(-90deg);
 	-ms-flex-item-align: center;
 	align-self: center;
-	top: 75%;
-	position: fixed;
+	margin: 0;
 	font-family: 'Rokkitt', serif;
 }
 
