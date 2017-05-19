@@ -2,18 +2,32 @@
 <html>
 
 <head>
+<title>inoriginal digital collages - savina monet fierro</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <style>
 .parent {
 	position: fixed;
 	overflow: hidden;
-	top: 0;
+	top: 42px;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	height: 89vh;
-	width: 99vw;
+	height: 100vh;
+	width: 100vw;
+}
+
+.scroller {
+	position: absolute;
+	padding: 0;
+	width: 100%;
+	height: 700vh !important;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	transform: translate(0px, 0px) translateZ(0px) !important;
 }
 
 .collage:nth-child(1) {
@@ -30,8 +44,8 @@
 }
 
 .collage:nth-child(1) {
-	top: 30px;
-	left: 70px;
+	top: 50px;
+	left: 600px;
 }
 
 .collage:nth-child(2) {
@@ -55,7 +69,8 @@
 }
 
 .collage:nth-child(6) {
-	right: 500px;
+	right: 180px;
+	top: 50px;
 }
 
 .collage:nth-child(7) {
@@ -86,7 +101,7 @@
 .collage:nth-child(12) {
 	bottom: 0;
 	right: 0px;
-	top: 0;
+	top: 50px;
 	left: 0;
 }
 
@@ -101,26 +116,13 @@
 }
 
 .collage:nth-child(15) {
-	top: 10px;
+	top: 320px;
 	left: 60px;
 }
 
 .collage:nth-child(16) {
 	bottom: -2195px;
 	right: -50px;
-}
-
-#main .scroller {
-	position: absolute;
-	padding: 0;
-	width: 100%;
-	height: 700vh !important;
-	-webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	-ms-transform: translateZ(0);
-	-o-transform: translateZ(0);
-	transform: translateZ(0);
-	transform: translate(0px, 0px) translateZ(0px) !important;
 }
 </style>
 </head>
@@ -129,11 +131,9 @@
 	<p>
 		<a href="index.html">Return to portfolio</a>
 	</p>
-	<div class="blurb">
-		<p>Find me: @_inoriginal</p>
-	</div>
 	<div class="parent">
-		<div class="scroller" style="transform: translate(0px, 0px) translateZ(0px);">
+		<div class="scroller"
+			style="transform: translate(0px, 0px) translateZ(0px);">
 			<div class="collage">
 				<img src="collage/california.jpg">
 			</div>
@@ -184,16 +184,6 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		$(window).scroll(function() {
-
-			if ($(this).scrollTop() > 0) {
-				$('.collage:nth-child(even)').hide();
-			} else {
-				$('.collage:nth-child(even)').show();
-			}
-		});
-	</script>
 </body>
 
 </html>
