@@ -566,7 +566,7 @@ p.viewmore {
 	}
 	.flex.grid {
 		margin: 4% 6%;
-		margin-right: 5%;
+		margin-right: 3%;
 	}
 	.casetitle {
 		height: 22vh;
@@ -593,13 +593,13 @@ p.viewmore {
 		margin-bottom: 8em;
 	}
 	.greeting {
-		font-size: 1.3em;
-		margin-top: 63.5%;
+		font-size: 1em;
+		margin-top: 93.5%;
 	}
 	.casetitle {
 		padding: 0.4em;
 		height: 12vh;
-		left: -270px;
+		left: -214px;
 		width: 100vw;
 	}
 	.company_name {
@@ -624,15 +624,12 @@ p.viewmore {
 		font-size: 0.8em;
 	}
 	.flex.row.skills {
-		flex-wrap: wrap;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		text-align: center;
 	}
-}
-
-@media all and (max-width: 400px) {
 	.flex.column.nav {
 		display: none;
-	}
-	h3 {
-		font-size: 2em;
 	}
 }

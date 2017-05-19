@@ -103,3 +103,12 @@ p.case-header {
 		height: 218vh !important;
 	}
 }
+
+@media all and (max-width: 585px) {
+	.parallax {
+		font-size: 153%;
+	}
+	.case_img {
+		height: 28vh;
+	}
+}
