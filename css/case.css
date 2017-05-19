@@ -112,3 +112,19 @@ p.case-header {
 		height: 28vh;
 	}
 }
+
+@media all and (min-width: 350px) {
+	.case_img {
+		height: 85vh;
+	}
+	.flex.column.case {
+		height: 31vh;
+		margin-bottom: 1em;
+	}
+	.flex.row.case {
+		flex-direction: column-reverse;
+	}
+	.parallax__group.casetwo {
+		height: 310vh !important;
+	}
+}
