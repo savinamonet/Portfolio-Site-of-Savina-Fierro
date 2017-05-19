@@ -250,6 +250,12 @@ a {
 	font-family: 'Rokkitt', serif;
 }
 
+.flex.column.identity {
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+}
+
 html {
 	font-size: 0.813em;
 }
