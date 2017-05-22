@@ -192,8 +192,8 @@ img {
 .flex.column.bordernav {
 	height: 100vh;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 a {
@@ -202,7 +202,7 @@ a {
 
 .navlink {
 	-webkit-transform: rotate(-90deg);
-	        transform: rotate(-90deg);
+	transform: rotate(-90deg);
 	text-decoration: none;
 }
 
@@ -210,7 +210,7 @@ a {
 	height: 100vh;
 	font-size: 2.1em;
 	-ms-flex-line-pack: center;
-	    align-content: center;
+	align-content: center;
 }
 
 .hvr-underline-reveal::before {
@@ -238,7 +238,7 @@ a {
 
 .hvr-underline-reveal {
 	-webkit-box-shadow: 0 0 1px transparent;
-	        box-shadow: 0 0 1px transparent;
+	box-shadow: 0 0 1px transparent;
 	position: relative;
 }
 
@@ -261,10 +261,10 @@ a {
 .flex.column.identity {
 	height: 100vh;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-ms-flex-line-pack: center;
-	    align-content: center;
+	align-content: center;
 }
 
 html {
@@ -408,16 +408,16 @@ small, .font_small {
 .flex.column {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	height: 60vh;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around
+	justify-content: space-around
 }
 
 .flex.row.skills {
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	justify-content: space-around;
 }
 
 .skilldetail {
@@ -427,13 +427,13 @@ small, .font_small {
 
 .flex.row.contact {
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	justify-content: space-around;
 	margin: 2% 6%;
 }
 
 .aboutwrap {
 	-ms-flex-line-pack: center;
-	    align-content: center;
+	align-content: center;
 	width: 74vw;
 }
 
@@ -460,7 +460,7 @@ small, .font_small {
 .casetitle {
 	padding: 1.45em;
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	height: 47vh;
 	width: 26vw;
 	left: 380px;
@@ -472,13 +472,13 @@ small, .font_small {
 .casetitle.flex {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	-ms-flex-line-pack: center;
-	    align-content: center;
+	align-content: center;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .caselink {
@@ -493,8 +493,8 @@ p.viewmore {
 
 .flex.aboutcolumn.column {
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	height: 80vh;
 }
 
@@ -588,8 +588,8 @@ p.viewmore {
 	.flex.column.skillset {
 		height: 50vh;
 		-webkit-box-pack: space-evenly;
-		    -ms-flex-pack: space-evenly;
-		        justify-content: space-evenly;
+		-ms-flex-pack: space-evenly;
+		justify-content: space-evenly;
 	}
 	.sectionsubtitle {
 		margin-left: 4%;
@@ -623,6 +623,20 @@ p.viewmore {
 	}
 	.portrait {
 		width: 54%;
+	}
+}
+
+.warning-message {
+	display: none;
+}
+
+@media only screen and (orientation:landscape) and (max-width: 500px) {
+	.pagewrap {
+		display: none;
+	}
+	.warning-message {
+		display: block;
+		color: #333;
 	}
 }
 
@@ -664,13 +678,13 @@ p.viewmore {
 	.flex.row.skills {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 		-ms-flex-line-pack: center;
-		    align-content: center;
+		align-content: center;
 		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
 		text-align: center;
 	}
 	.flex.column.nav {
