@@ -471,6 +471,12 @@ p.viewmore {
 	height: 80vh;
 }
 
+@media all and (min-height: 320px and max-height: 600px) {
+	* {
+		display: none;
+	}
+}
+
 @media all and (max-width: 1550px) {
 	#group3 {
 		height: 191vh;
