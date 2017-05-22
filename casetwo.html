@@ -11,24 +11,36 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/case.css">
+<script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = '2JVF1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
+    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
+    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+})(window,document,window['_fs_namespace'],'script','user');
+</script>
 </head>
 
 <body>
 	<div class="border top"></div>
-	<div class="border right">
-		<!--<div class="flex column nav">
-			<a href="home.html" class="navlink hvr-underline-reveal">Home</a> <a
-				href="home.html#group3" class="navlink hvr-underline-reveal">Work</a>
-			<a href="#group7" class="navlink hvr-underline-reveal">Contact</a>
-		</div> -->
-	</div>
+	<div class="border right"></div>
 	<div class="border bottom"></div>
 	<div class="border left">
 		<div class="flex column identity">
 			<h3 class="logo">monet</h3>
 		</div>
 	</div>
-	<a href="index.html#group3"><img src="exit.png" class="exit"></a>
+	<a href="index.html#group3"><img src="exit.png" class="exit"
+		alt="Return to Home Screen"></a>
 	<div class="parallax">
 		<div id="group3" class="parallax__group casetwo">
 			<div class="parallax__layer parallax__layer--base">
@@ -36,7 +48,7 @@
 					<div class="case">
 						<div class="case_container">
 							<div class="case_img">
-								<img src="prograss.jpg">
+								<img src="prograss.jpg" alt="ProGrass Home and Landscape Services">
 							</div>
 						</div>
 						<div class="flex column case">
@@ -68,7 +80,7 @@
 							</div>
 						</div>
 						<div class="case-detail">
-							<img src="prograss_home.jpg">
+							<img src="prograss_home.jpg" alt="ProGrass Home and Landscape Services Home Page">
 							<p>Their website has always been ProGrass’s most important
 								marketing tool, but information was previously very difficult to
 								access. About 66% of their traffic bounced off the home page
@@ -78,7 +90,7 @@
 								beautiful, but catered to a variety of needs. From supporting
 								legacy browsers to multiple geolocations, it’s packed full of
 								useful features to help the business grow.</p>
-							<img src="prograss_mobile.jpg">
+							<img src="prograss_mobile.jpg" alt="ProGrass Home and Landscape Services Mobile Screens">
 							<p>Captivating content is essential for convincing visitors
 								to buy, so everything is written from their point of view. Our
 								talented copywriters wrote every page from scratch based on the
