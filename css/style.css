@@ -100,7 +100,7 @@ body, html {
 }
 
 #group3 {
-	height: 209vh;
+	height: 190vh;
 	/* height of case studies */
 	z-index: 4;
 	/* slide over group 2 and 4 */
@@ -108,7 +108,7 @@ body, html {
 
 #group3 .parallax__layer--base {
 	background: #1340b7;
-	height: 209vh;
+	height: 187vh;
 }
 
 #group4 {
@@ -377,7 +377,7 @@ small, .font_small {
 }
 
 .sectiontitle.create {
-	margin-top: 0.6em;
+	margin-top: 0.1em;
 }
 
 .sectionsubtitle {
@@ -467,8 +467,6 @@ small, .font_small {
 	box-sizing: border-box;
 	height: 47vh;
 	width: 26vw;
-	left: 380px;
-	position: absolute;
 	background-color: #f5675a;
 	margin: auto;
 }
