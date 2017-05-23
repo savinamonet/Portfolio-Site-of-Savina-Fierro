@@ -82,6 +82,12 @@ p.case-header {
 	}
 }
 
+@media all and (max-width: 680px) and (orientation: landscape) {
+	.parallax__group.caseone {
+		height: 470vh !important;
+	}
+}
+
 @media all and (max-width:585px) {
 	.parallax {
 		font-size: 153%

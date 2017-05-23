@@ -535,22 +535,37 @@ p.viewmore {
 	}
 }
 
-@media handheld and (orientation: landscape) {
-	#group1 .parallax__layer--base {
-		background: red;
-	}
+@media all and (max-width: 680px) and (orientation: landscape) {
 	#group1 {
 		z-index: 5;
 		padding-bottom: 13%;
 	}
 	#group2 {
-		height: 128vh;
+		height: 142vh;
+	}
+	#group3 {
+		height: 221%;
+	}
+	#group6 {
+		height: 114vh;
+	}
+	.flex.column.skillset {
+		flex-direction: row;
+	}
+	.square {
+		top: 39%;
 	}
 	.portrait {
 		width: 31%;
 	}
 	.greeting {
-		margin-top: 0;
+		margin-top: 35.5% !important;
+	}
+	.glitch {
+		left: -24px !important;
+	}
+	.parallax__layer.parallax__layer--fore.contact {
+		height: 34vh;
 	}
 }
 
@@ -600,12 +615,6 @@ p.viewmore {
 		width: auto;
 		max-width: 100%;
 	}
-	/* #group3 {
-		height: 130vh;
-	}
-	#group3 .parallax__layer--base {
-		height: 130vh;
-	} */
 	.portrait {
 		width: 54%;
 	}
@@ -621,7 +630,7 @@ p.viewmore {
 	}
 	.casetitle {
 		padding: 0.4em;
-		height: 25vh;
+		height: 42vh;
 	}
 	.caselink {
 		font-size: 1em;
