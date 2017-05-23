@@ -16,35 +16,6 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/case.css">
 
-<style type="text/css">
-.warning-message {
-	display: none;
-}
-
-@media only screen and (orientation:landscape) and (max-width: 500px) {
-	.pagewrap {
-		display: none;
-	}
-	.warning-message {
-		display: block;
-		color: #333;
-		height: 100vh;
-		width: 100vw;
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		flex-direction: column;
-	}
-}
-
-@media only screen and (orientation:portrait) {
-	.warning-message {
-		display: none;
-	}
-}
-</style>
 <script>
 	window['_fs_debug'] = false;
 	window['_fs_host'] = 'fullstory.com';
@@ -99,104 +70,87 @@
 </head>
 
 <body>
-	<div class="warning-message">
-		<div style="margin: auto;">
-			<img src="landscape.png" alt="Landscape mode is not supported"
-				style="margin: auto; text-align: center;">
-			<p style="text-align: center;">
-				This site is not available in landscape mode,<br> <strong>Please
-					rotate your device</strong>
-			</p>
+	<div class="border top"></div>
+	<div class="border right"></div>
+	<div class="border bottom"></div>
+	<div class="border left">
+		<div class="flex column identity">
+			<h3 class="logo">monet</h3>
 		</div>
 	</div>
-	<div class="pagewrap">
-		<div class="border top"></div>
-		<div class="border right"></div>
-		<div class="border bottom"></div>
-		<div class="border left">
-			<div class="flex column identity">
-				<h3 class="logo">monet</h3>
+	<a href="index.html#group3"><img src="exit.png" class="exit"
+		alt="Return to Home"></a>
+
+	<div class="parallax">
+		<div id="group3" class="parallax__group caseone">
+			<div class="parallax__layer parallax__layer--base">
+
+				<div class="case">
+					<div class="case_img">
+						<img src="rwc.jpg" alt="RWC Delivery">
+					</div>
+					<div class="flex row case">
+						<div class="case-blurb">
+							<p class="blurb-detail">RWC approached monet to start their
+								online presence on the right foot. As a logistic start-up their
+								customer service and prompt delivery set them apart from other
+								local couriers. Business was growing and the owner knew if they
+								wanted to grow even more, they would need an online presence.</p>
+						</div>
+						<div class="case-aside">
+							<div class="case-wrapper">
+								<p class="case-header">Client</p>
+								<p>RWC Delivery, LLC</p>
+							</div>
+							<div class="case-wrapper">
+								<p class="case-header">Expertise</p>
+								<p>Website, Branding, Front-End Development</p>
+							</div>
+							<div class="case-wrapper">
+								<p class="case-header">Visit</p>
+								<p>
+									<a class="case-link" href="https://rwcdelivery.com"
+										target="_blank">rwcdelivery.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="case-detail">
+						<img src="rwc_home.jpg" alt="RWC Delivery Home Page">
+						<p>Through data analysis and user research, we ascertained
+							what a great courier website needs to do. As a B2C and B2B
+							courier, visitors needed a clear division between services.
+							Wanting to offer a true insight into what services RWC can
+							provide, monet designed a website that funnels visitors into two
+							categories: Residential Services or Commercial Services. The
+							results were a 15% increase in quotes from both B2C and B2B
+							businesses.</p>
+						<img src="rwc_mobile.jpg" alt="RWC Delivery Mobile Screens">
+						<p>A huge part of the redesign was geared around configuring
+							the website from an SEO perspective. We created content
+							specifically to earn key search positions and carried out deep
+							technical optimization. The results have been staggering. monet
+							continues to work closely with the team at RWC Delivery, helping
+							them grow the brand.</p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<a href="index.html#group3"><img src="exit.png" class="exit"
-			alt="Return to Home"></a>
-		<div class="parallax">
-			<div id="group3" class="parallax__group casetwo">
-				<div class="parallax__layer parallax__layer--base">
-					<div class="flex grid">
-						<div class="case">
-							<div class="case_container">
-								<div class="case_img">
-									<img src="rwc.jpg" alt="RWC Delivery">
-								</div>
-							</div>
-							<div class="flex column case">
-								<div class="flex row case">
-									<div class="case-blurb">
-										<p class="blurb-detail">RWC approached monet to start
-											their online presence on the right foot. As a logistic
-											start-up their customer service and prompt delivery set them
-											apart from other local couriers. Business was growing and the
-											owner knew if they wanted to grow even more, they would need
-											an online presence.</p>
-									</div>
-									<div class="case-aside">
-										<div class="case-wrapper">
-											<p class="case-header">Client</p>
-											<p>RWC Delivery, LLC</p>
-										</div>
-										<div class="case-wrapper">
-											<p class="case-header">Expertise</p>
-											<p>Website, Branding, Front-End Development</p>
-										</div>
-										<div class="case-wrapper">
-											<p class="case-header">Visit</p>
-											<p>
-												<a class="case-link" href="https://rwcdelivery.com"
-													target="_blank">rwcdelivery.com</a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="case-detail">
-								<img src="rwc_home.jpg" alt="RWC Delivery Home Page">
-								<p>Through data analysis and user research, we ascertained
-									what a great courier website needs to do. As a B2C and B2B
-									courier, visitors needed a clear division between services.
-									Wanting to offer a true insight into what services RWC can
-									provide, monet designed a website that funnels visitors into
-									two categories: Residential Services or Commercial Services.
-									The results were a 15% increase in quotes from both B2C and B2B
-									businesses.</p>
-								<img src="rwc_mobile.jpg" alt="RWC Delivery Mobile Screens">
-								<p>A huge part of the redesign was geared around configuring
-									the website from an SEO perspective. We created content
-									specifically to earn key search positions and carried out deep
-									technical optimisation. The results have been staggering. monet
-									continues to work closely with the team at RWC Delivery,
-									helping them grow the brand.</p>
-							</div>
-						</div>
+		<div id="group7" class="parallax__group">
+			<div class="parallax__layer parallax__layer--base">
+				<div class="flex row contact">
+					<div class="phone">
+						<p>206 370 4351</p>
 					</div>
+					<div class="email">savina@hellomonet.com</div>
 				</div>
 			</div>
-			<div id="group7" class="parallax__group">
-				<div class="parallax__layer parallax__layer--base">
-					<div class="flex row contact">
-						<div class="phone">
-							<p>206 370 4351</p>
-						</div>
-						<div class="email">savina@hellomonet.com</div>
-					</div>
-				</div>
-				<div class="parallax__layer parallax__layer--fore">
-					<div class="title">
-						<p>
-							want to work together?<br> <a
-								href="mailto:savina@hellomonet.com">send a brief</a>
-						</p>
-					</div>
+			<div class="parallax__layer parallax__layer--fore">
+				<div class="title">
+					<p>
+						want to work together?<br> <a
+							href="mailto:savina@hellomonet.com">send a brief</a>
+					</p>
 				</div>
 			</div>
 		</div>
