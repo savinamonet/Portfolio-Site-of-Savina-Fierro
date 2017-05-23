@@ -97,10 +97,11 @@ body, html {
 
 #group2 .parallax__layer--back {
 	background: #1340b7;
+	margin-left: -4px;
 }
 
 #group3 {
-	height: 190vh;
+	height: 177%;
 	/* height of case studies */
 	z-index: 4;
 	/* slide over group 2 and 4 */
@@ -108,7 +109,7 @@ body, html {
 
 #group3 .parallax__layer--base {
 	background: #1340b7;
-	height: 187vh;
+	height: 100%;
 }
 
 #group4 {
@@ -136,6 +137,7 @@ body, html {
 
 #group6 .parallax__layer--back {
 	background: #1340b7;
+	margin-left: -4px;
 }
 
 #group7 {
@@ -496,26 +498,6 @@ p.viewmore {
 	height: 80vh;
 }
 
-@media all and (max-width: 1550px) {
-	#group3 {
-		height: 191vh;
-	}
-	#group3 .parallax__layer--base {
-		height: 187vh;
-	}
-}
-
-@media all and (max-width: 1375px) {
-	#group3 {
-		height: 160%;
-		/* At Browser Size 1366px */
-	}
-	#group3 .parallax__layer--base {
-		height: 100%;
-		/* At Browser Size 1366px */
-	}
-}
-
 @media all and (max-width: 1250px) {
 	.greeting {
 		font-size: 2.3em;
@@ -529,6 +511,9 @@ p.viewmore {
 	}
 	.sectionsubtitle {
 		margin-left: 9%;
+	}
+	#group3 {
+		height: 133%;
 	}
 }
 
@@ -545,6 +530,9 @@ p.viewmore {
 	.logo {
 		color: white;
 	}
+	#group3 {
+		height: 100%;
+	}
 }
 
 @media all and ( max-width : 765px) and ( orientation: landscape) {
@@ -555,12 +543,12 @@ p.viewmore {
 	#group2 {
 		height: 128vh;
 	}
-	#group3 .parallax__layer--base {
+	/* #group3 .parallax__layer--base {
 		height: 225vh;
 	}
 	#group3 {
 		height: 302vh;
-	}
+	} */
 	.portrait {
 		width: 31%;
 	}
@@ -573,9 +561,6 @@ p.viewmore {
 	}
 	.casetitle {
 		padding: 1em;
-	}
-	#group6 .parallax__layer--back, #group2 .parallax__layer--back {
-		margin-left: -4px;
 	}
 	.border.right, .border.left {
 		width: 20px;
@@ -615,12 +600,12 @@ p.viewmore {
 		width: auto;
 		max-width: 100%;
 	}
-	#group3 {
+	/* #group3 {
 		height: 130vh;
 	}
 	#group3 .parallax__layer--base {
 		height: 130vh;
-	}
+	} */
 	.portrait {
 		width: 54%;
 	}
@@ -629,7 +614,7 @@ p.viewmore {
 	}
 }
 
-@media all and (max-width: 585px) {
+@media all and (max-width: 715px) {
 	.greeting {
 		font-size: 1em;
 		margin-top: 93.5%;
@@ -640,12 +625,6 @@ p.viewmore {
 	}
 	.caselink {
 		font-size: 1em;
-	}
-	#group3 .parallax__layer--base {
-		height: 110vh;
-	}
-	#group3 {
-		height: 91vh;
 	}
 	.navlink {
 		font-size: 0.8em;
@@ -671,12 +650,6 @@ p.viewmore {
 	.greeting {
 		font-size: 0.9em;
 		margin-top: 129.5%;
-	}
-	#group3 {
-		height: 86vh;
-	}
-	#group3 .parallax__layer--base {
-		height: 88vh;
 	}
 	.case.flex.row {
 		margin-bottom: 3em;
