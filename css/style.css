@@ -149,7 +149,7 @@ body, html {
 
 #group7 .parallax__layer--base {
 	background: #dde4be;
-	height: 46vh;
+	height: 47vh;
 }
 
 /* misc
@@ -535,7 +535,7 @@ p.viewmore {
 	}
 }
 
-@media all and ( max-width : 765px) and ( orientation: landscape) {
+@media handheld and (orientation: landscape) {
 	#group1 {
 		z-index: 5;
 		padding-bottom: 13%;
@@ -543,14 +543,11 @@ p.viewmore {
 	#group2 {
 		height: 128vh;
 	}
-	/* #group3 .parallax__layer--base {
-		height: 225vh;
-	}
-	#group3 {
-		height: 302vh;
-	} */
 	.portrait {
 		width: 31%;
+	}
+	.greeting {
+		margin-top: 45.5%;
 	}
 }
 
