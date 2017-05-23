@@ -536,6 +536,9 @@ p.viewmore {
 }
 
 @media handheld and (orientation: landscape) {
+	#group1 .parallax__layer--base {
+		background: red;
+	}
 	#group1 {
 		z-index: 5;
 		padding-bottom: 13%;
@@ -547,7 +550,7 @@ p.viewmore {
 		width: 31%;
 	}
 	.greeting {
-		margin-top: 45.5%;
+		margin-top: 0;
 	}
 }
 
