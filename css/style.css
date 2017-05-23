@@ -453,14 +453,6 @@ small, .font_small {
 	margin-bottom: 1em;
 }
 
-.titlebox {
-	bottom: 35%;
-}
-
-.titlebox2 {
-	top: 38%;
-}
-
 .casetitle {
 	padding: 1.45em;
 	-webkit-box-sizing: border-box;
@@ -491,6 +483,10 @@ small, .font_small {
 p.viewmore {
 	margin: 0;
 	font-size: 0.6em;
+}
+
+.company_name {
+	font-size: 1.618em;
 }
 
 .flex.aboutcolumn.column {
@@ -534,20 +530,9 @@ p.viewmore {
 	.sectionsubtitle {
 		margin-left: 9%;
 	}
-	.casetitle {
-		height: 34vh;
-		width: 26vw;
-		left: 260px;
-	}
 }
 
 @media all and (max-width:914px) {
-	.casetitle {
-		left: 190px;
-	}
-	.titlebox2 {
-		top: 20%;
-	}
 	.parallax {
 		width: 100vw;
 	}
@@ -562,6 +547,25 @@ p.viewmore {
 	}
 }
 
+@media all and ( max-width : 765px) and ( orientation: landscape) {
+	#group1 {
+		z-index: 5;
+		padding-bottom: 13%;
+	}
+	#group2 {
+		height: 128vh;
+	}
+	#group3 .parallax__layer--base {
+		height: 225vh;
+	}
+	#group3 {
+		height: 302vh;
+	}
+	.portrait {
+		width: 31%;
+	}
+}
+
 @media all and (max-width: 885px) {
 	.greeting {
 		font-size: 1.7em;
@@ -569,12 +573,10 @@ p.viewmore {
 	}
 	.casetitle {
 		padding: 1em;
-		height: 30vh;
-		left: 188px;
 	}
-}
-
-@media all and (max-width: 810px) {
+	#group6 .parallax__layer--back, #group2 .parallax__layer--back {
+		margin-left: -4px;
+	}
 	.border.right, .border.left {
 		width: 20px;
 	}
@@ -613,54 +615,34 @@ p.viewmore {
 		width: auto;
 		max-width: 100%;
 	}
-	.casetitle {
-		height: 22vh;
-	}
-	.titlebox {
-		bottom: 28%;
-	}
-	.titlebox2 {
-		top: 46%;
-	}
 	#group3 {
-		height: 116vh;
+		height: 130vh;
 	}
 	#group3 .parallax__layer--base {
-		height: 115vh;
+		height: 130vh;
 	}
 	.portrait {
 		width: 54%;
 	}
+	.company_name {
+		font-size: 1em;
+	}
 }
 
 @media all and (max-width: 585px) {
-	.case.flex.row {
-		margin-bottom: 8em;
-	}
 	.greeting {
 		font-size: 1em;
 		margin-top: 93.5%;
 	}
 	.casetitle {
 		padding: 0.4em;
-		height: 12vh;
-		left: -214px;
-		width: 100vw;
-	}
-	.company_name {
-		margin-bottom: 8px;
+		height: 25vh;
 	}
 	.caselink {
 		font-size: 1em;
 	}
-	.titlebox {
-		top: 45%;
-	}
-	.titlebox2 {
-		top: 100%;
-	}
 	#group3 .parallax__layer--base {
-		height: 93vh;
+		height: 110vh;
 	}
 	#group3 {
 		height: 91vh;
@@ -691,22 +673,16 @@ p.viewmore {
 		margin-top: 129.5%;
 	}
 	#group3 {
-		height: 132vh;
+		height: 86vh;
 	}
 	#group3 .parallax__layer--base {
-		height: 127vh;
+		height: 88vh;
 	}
 	.case.flex.row {
 		margin-bottom: 3em;
 	}
-	.titlebox2 {
-		top: 62%;
-	}
 	.parallax {
 		font-size: 150%;
-	}
-	.casetitle {
-		left: -188px;
 	}
 	.square {
 		height: 62vh;
