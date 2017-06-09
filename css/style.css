@@ -585,7 +585,7 @@ p.viewmore {
         padding-left: 5%;
     }
     .square {
-        height: 53vh;
+        height: 57vh;
         width: 89vw;
         left: 4%;
         top: 35%;
@@ -594,10 +594,10 @@ p.viewmore {
         font-size: 175%;
     }
     .flex.column.skillset {
-        height: 50vh;
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
+        height: 58vh;
+        -webkit-box-pack: space-around;
+        -ms-flex-pack: space-around;
+        justify-content: space-around;
     }
     .sectionsubtitle {
         margin-left: 4%;
