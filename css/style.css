@@ -535,7 +535,7 @@ ul.skilltitle {
     }
 }
 
-@media all and (max-width: 665px) and (orientation: landscape) {
+@media all and (max-width: 680px) and (orientation: landscape) {
     #group1 {
         z-index: 5;
         padding-bottom: 13%;
@@ -559,7 +559,7 @@ ul.skilltitle {
         width: 31%;
     }
     .greeting {
-        margin-top: 68.5% !important;
+        margin-top: ;
     }
     .glitch {
         left: -24px !important;
