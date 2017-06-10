@@ -535,7 +535,7 @@ ul.skilltitle {
     }
 }
 
-@media all and (max-width: 680px) and (orientation: landscape) {
+@media all and (max-width: 665px) and (orientation: landscape) {
     #group1 {
         z-index: 5;
         padding-bottom: 13%;
