@@ -109,7 +109,7 @@ html {
 }
 
 #group3 {
-    height: 177%;
+    height: 107%;
     /* height of case studies */
     z-index: 4;
     /* slide over group 2 and 4 */
@@ -156,7 +156,7 @@ html {
 }
 
 #group7 .parallax__layer--base {
-    background: #dde4be;
+    background: white;
     height: 47vh;
 }
 
@@ -249,7 +249,7 @@ a {
 }
 
 .logo {
-    color: #dde4be;
+    color: white;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     -ms-flex-item-align: center;
@@ -276,7 +276,7 @@ body {
     font-family: 'Rokkitt', serif;
     font-weight: 400;
     line-height: 1.45;
-    color: #dde4be;
+    color: white;
 }
 
 p {
@@ -290,7 +290,7 @@ h4 {
     margin: 1.414em 0 0.5em;
     font-weight: inherit;
     line-height: 1.2;
-    color: #dde4be;
+    color: white;
 }
 
 h1 {
@@ -367,7 +367,7 @@ small,
 .square {
     height: 61vh;
     width: 49vw;
-    background-color: #f5675a;
+    background-color: white;
     position: absolute;
     left: 50%;
     top: 23%;
@@ -429,7 +429,7 @@ small,
 
 .skilldetail {
     list-style: none;
-    color: #c45248;
+    color: #444;
 }
 
 .flex.row.contact {
@@ -462,7 +462,7 @@ small,
     box-sizing: border-box;
     height: 47vh;
     width: 26vw;
-    background-color: #f5675a;
+    background-color: white;
     margin: auto;
 }
 
@@ -476,6 +476,7 @@ small,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    color: #1340b7;
 }
 
 .caselink {
@@ -499,6 +500,10 @@ p.viewmore {
     height: 80vh;
 }
 
+ul.skilltitle {
+    color: #1340b7;
+}
+
 @media all and (max-width: 1250px) {
     .greeting {
         font-size: 2.3em;
@@ -514,7 +519,7 @@ p.viewmore {
         margin-left: 9%;
     }
     #group3 {
-        height: 183%;
+        height: 100%;
     }
     .company_name {
         font-size: 1.418em;
@@ -528,9 +533,6 @@ p.viewmore {
     .border.left {
         background-color: transparent;
     }
-    /*    #group3 {
-        height: 100%;
-    }*/
 }
 
 @media all and (max-width: 680px) and (orientation: landscape) {
@@ -542,7 +544,7 @@ p.viewmore {
         height: 142vh;
     }
     #group3 {
-        height: 221%;
+        height: 100%;
     }
     #group6 {
         height: 114vh;

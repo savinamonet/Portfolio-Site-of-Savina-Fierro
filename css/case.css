@@ -1,107 +1,109 @@
-.case, img {
-	max-width: 100%
+.case,
+img {
+    max-width: 100%
 }
 
 body {
-	background-color: #1340b7
+    background-color: #1340b7
 }
 
 .exit {
-	position: absolute;
-	right: 5%;
-	top: 11%;
-	z-index: 6
+    position: absolute;
+    right: 5%;
+    top: 11%;
+    z-index: 6
 }
 
 img {
-	height: auto;
-	width: auto
+    height: auto;
+    width: auto
 }
 
-.parallax__group.casetwo, .parallax__group.caseone {
-	max-width: 75vw;
-	margin: auto;
+.parallax__group.casetwo,
+.parallax__group.caseone {
+    max-width: 75vw;
+    margin: auto;
 }
 
 .parallax__group.caseone {
-	height: 340vh !important;
+    height: 370vh !important;
 }
 
 .parallax__group.casetwo {
-	height: 353vh !important;
+    height: 353vh !important;
 }
 
 p.blurb-detail {
-	width: 70%
+    width: 70%
 }
 
 .case-wrapper p {
-	margin: 0;
-	font-size: .8em
+    margin: 0;
+    font-size: .8em
 }
 
 p.case-header {
-	font-size: 1em
+    font-size: 1em
 }
 
 .flex.column.case {
-	height: 35vh
+    height: 35vh
 }
 
 .case-blurb {
-	-ms-flex-item-align: center;
-	align-self: center
+    -ms-flex-item-align: center;
+    align-self: center
 }
 
 .case-wrapper {
-	margin: 1em auto
+    margin: 1em auto
 }
 
 .case-detail p {
-	font-size: .813em;
-	margin: 3em auto
+    font-size: .813em;
+    margin: 3em auto
 }
 
 .case-link {
-	color: #f5675a
+    color: #f5675a
 }
 
 .case.flex.row {
-	margin: 1em 0;
+    margin: auto;
 }
 
 @media all and (max-width:1060px) {
-	p.blurb-detail {
-		width: 88%
-	}
+    p.blurb-detail {
+        width: 88%
+    }
 }
 
 @media all and (max-width:810px) {
-	#group3 {
-		height: 230vh
-	}
+    #group3 {
+        height: 230vh
+    }
 }
 
 @media all and (max-width: 680px) and (orientation: landscape) {
-	.parallax__group.caseone {
-		height: 470vh !important;
-	}
+    .parallax__group.caseone {
+        height: 470vh !important;
+    }
 }
 
 @media all and (max-width:585px) {
-	.parallax {
-		font-size: 153%
-	}
-	.case-wrapper {
-		margin: 0;
-	}
+    .parallax {
+        font-size: 153%
+    }
+    .case-wrapper {
+        margin: 0;
+    }
 }
 
 @media all and (max-width:450px) {
-	.flex.row.case {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: reverse;
-		-ms-flex-direction: column-reverse;
-		flex-direction: column-reverse
-	}
+    .flex.row.case {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse
+    }
 }
