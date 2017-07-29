@@ -29,8 +29,7 @@
             <header>
                 <nav class="container nav">
                     <ul>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contact">About</a></li>
+
                     </ul>
                 </nav>
             </header>
@@ -101,19 +100,19 @@
                         <div class="container row skill">
                             <ul class="skill-detail">
                                 <li>Wordpress <span class="line"><span class="progress" id="wordpress"
-									style="width: 70%;"></span></span>
+									style="max-width: 70%;"></span></span>
                                 </li>
                                 <li>HTML/CSS <span class="line"><span class="progress" i="html"
-									style="width: 90%;"></span></span>
+									style="max-width: 90%;"></span></span>
                                 </li>
                                 <li>Marketing <span class="line"><span class="progress" id="marketing"
-									style="width: 80%;"></span></span>
+									style="max-width: 80%;"></span></span>
                                 </li>
                                 <li>Javascript <span class="line"><span class="progress" id="javascript"
-									style="width: 60%;"></span></span>
+									style="max-width: 60%;"></span></span>
                                 </li>
                                 <li>Graphic Design <span class="line"><span class="progress" id="graphic"
-									style="width: 70%;"></span></span>
+									style="max-width: 70%;"></span></span>
                                 </li>
                             </ul>
                         </div>
@@ -132,6 +131,35 @@
         </section>
     </div>
     <script type="text/javascript" src="js/title.js"></script>
+    <script>
+        var $animation_elements = $('.progress');
+        var $window = $(window);
+
+        function check_if_in_view() {
+            var window_height = $window.height();
+            var window_top_position = $window.scrollTop();
+            var window_bottom_position = (window_top_position + window_height);
+
+            $.each($animation_elements, function() {
+                var $element = $(this);
+                var element_height = $element.outerHeight();
+                var element_top_position = $element.offset().top;
+                var element_bottom_position = (element_top_position + element_height);
+
+                //check to see if this current container is within viewport
+                if ((element_bottom_position >= window_top_position) &&
+                    (element_top_position <= window_bottom_position)) {
+                    $element.addClass('in-view');
+                } else {
+                    $element.removeClass('in-view');
+                }
+            });
+        }
+
+        $window.on('scroll resize', check_if_in_view);
+        $window.trigger('scroll');
+
+    </script>
     <script>
         $('bodyWrap').scroll(function() {
             var fromTopPx = 1000; // distance to trigger
