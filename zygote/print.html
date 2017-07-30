@@ -1,4 +1,5 @@
-<head><title>savina monet fierro</title>
+<head>
+    <title>savina monet fierro</title>
     <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="author" content="savina monet fierro">
@@ -14,44 +15,82 @@
 
     <link rel="stylesheet" href="style/style.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<style>
-    .identity {
-    z-index: 1;
-}
-    body{
-        overflow-x: hidden;
-    }
+    <style>
+        h1 {
+            margin: 0;
+            color:white;
+        }
+
     </style>
 </head>
+
 <body>
     <div id="site-content">
-<div class="identity">
+        <div class="identity">
             <h2><a href="index.html">monet</a></h2>
         </div>
-     <header>
-                <nav class="container nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#contact">About</a></li>
-                    </ul>
-                </nav>
-            </header>
-<div class="masonry">
-   <div class="item1 boxshadow"><img src="model_search.jpg"></div>
-   <div class="item2 boxshadow"><img src="http://unsplash.it/668/600"></div>
-    <div class="item3 boxshadow"><img src="http://unsplash.it/668/350"></div>
-</div>
-        </div> 
-    <div id="site-footer" style="background-color: #1340b7;"><section id="contact" class="contact">
+        <header>
+            <nav class="container nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#contact">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="masonry">
+            <div class="print1 boxshadow">
+                <div class="casecover cover1 hvr-sweep-to-bottom">
+                    <h1>A4 Flyer Design</h1>
+                    <p>Modeling Agency wanted to promote their Summer Teen Scouting events.</p>
+                </div>
+            </div>
+            <div class="print2 boxshadow">
+                <div class="casecover cover2 hvr-sweep-to-bottom">
+                    <h1>A4 Flyer Design</h1>
+                    <p>Modeling Agency wanted to promote their Summer Teen Scouting events.</p>
+                </div>
+            </div>
+            <div class="print3 boxshadow">
+                <div class="casecover cover3 hvr-sweep-to-bottom">
+                    <h1>A4 Flyer Design</h1>
+                    <p>Modeling Agency wanted to promote their Summer Teen Scouting events.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="site-footer" style="background-color: #1340b7;">
+        <section id="contact" class="contact">
             <h1 style="color: #fff;">Say hello</h1>
             <div style="color:#fff;">
                 <ul class="container row footer">
-                    <li><a style="color:#fff;" href="mailto:savina@hellomonet.com?Subject=I%27m%20interested%20in%20your%20service" >savina@hellomonet.com</a></li>
+                    <li><a style="color:#fff;" href="mailto:savina@hellomonet.com?Subject=I%27m%20interested%20in%20your%20service">savina@hellomonet.com</a></li>
                     <li>206 370 4351</li>
                     <li>Available for work! 👋</li>
                 </ul>
             </div>
-        </section></div>
+        </section>
+    </div>
     <script type="text/javascript" src="js/title.js"></script>
-     <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.casecover').hide();
+            $(".print1").hover(function() {
+                $('.cover1').show();
+            }, function() {
+                $('.casecover').hide();
+            });
+            $(".print2").hover(function() {
+                $('.cover2').show();
+            }, function() {
+                $('.casecover').hide();
+            });
+            $(".print3").hover(function() {
+                $('.cover3').show();
+            }, function() {
+                $('.casecover').hide();
+            });
+        });
+
+    </script>
 </body>
