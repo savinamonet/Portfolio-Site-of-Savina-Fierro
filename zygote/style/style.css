@@ -538,7 +538,7 @@
       background-position: top;
       background-attachment: fixed;
       height: 80vh;
-      max-height: 80vh;
+      max-height: 529px;
       padding-top: 0;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -886,9 +886,13 @@
       animation-name: growRight;
       animation-timing-function: ease-in;
   }
+  
+  ul.container.row.footer a {
+      color: white;
+  }
   /* BEGGINNING */
   
-  @media screen and (min-width:300px) {
+  @media screen and (min-width:200px) {
       .container.column {
           margin-left: 2%;
       }
