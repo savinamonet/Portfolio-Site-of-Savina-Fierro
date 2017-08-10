@@ -255,12 +255,13 @@
   
   .square {
       margin: auto;
-      background-image: url(http://unsplash.it/674/500);
-      width: 50vw;
+      width: 100vw;
   }
   
   .square.right {
-      background-image: url(../littleprince_index.jpg);
+      /* background-image: url(../littleprince_index.jpg);*/
+      background-image: url(../2.jpg);
+      background-position: center;
   }
   
   .square.left {
@@ -536,7 +537,8 @@
   .container.row.bottom.hero2 {
       background-position: top;
       background-attachment: fixed;
-      height: 91vh;
+      height: 80vh;
+      max-height: 80vh;
       padding-top: 0;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -587,11 +589,6 @@
       -ms-flex-pack: end;
       justify-content: flex-end;
       margin-bottom: -7%;
-  }
-  
-  .case-text {
-      margin: auto;
-      max-width: 60%;
   }
   
   .client-test {
@@ -663,6 +660,10 @@
   
   .overlay-text ul {
       list-style: none;
+  }
+  
+  .case-link {
+      color: #fff;
   }
   
   .case-link:visited {
@@ -911,6 +912,7 @@
       section.about,
       section.contact {
           margin-left: 2%;
+          font-size: 1.5em;
       }
       .container.about {
           -webkit-box-orient: vertical;
@@ -943,11 +945,17 @@
           -webkit-column-count: 1;
           column-count: 1;
       }
+      .case-text {
+          margin: auto;
+          max-width: 80%;
+          font-size: 1.3em;
+      }
   }
   
   @media screen and (min-width: 650px) {
       .container.column {
           margin-left: 4%;
+          /*max-height: 81vh;*/
       }
       .container.row.bottom {
           -webkit-box-pack: justify;
@@ -1013,6 +1021,11 @@
           -ms-flex-direction: row;
           flex-direction: row;
       }
+      .case-text {
+          margin: auto;
+          max-width: 60%;
+          font-size: 1em;
+      }
   }
   
   @media screen and (min-width: 1000px) {
@@ -1045,6 +1058,10 @@
           -webkit-box-direction: normal;
           -ms-flex-direction: row;
           flex-direction: row;
+          font-size: 0.6em;
+      }
+      section.contact {
+          font-size: 1em;
       }
       .container.row.bottom>.text {
           width: auto;
