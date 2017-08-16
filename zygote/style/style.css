@@ -259,9 +259,8 @@
   }
   
   .square.right {
-      /* background-image: url(../littleprince_index.jpg);*/
-      background-image: url(../2.jpg);
-      background-position: center;
+      background: url(../2.jpg) no-repeat center;
+      background-size: cover;
   }
   
   .square.left {
@@ -535,7 +534,7 @@
       background-position: top;
       background-attachment: fixed;
       height: 80vh;
-      max-height: 529px;
+      max-height: 349px;
       padding-top: 0;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1049,6 +1048,13 @@
           max-width: 80%;
           font-size: 1.3em;
       }
+      .inner-text {
+          height: 250px;
+      }
+      .circle {
+          width: 16%;
+          height: 40%;
+      }
       .casecover {
           font-size: 1.7em;
       }
@@ -1095,7 +1101,7 @@
       }
       .item1 {
           height: 977px;
-          width: 667px;
+          width: auto;
       }
       .item2 {
           height: 599px;
@@ -1141,6 +1147,10 @@
           max-width: 60%;
           font-size: 1em;
       }
+      .circle {
+          height: 198px;
+          width: 198px;
+      }
   }
   
   @media screen and (min-width: 1000px) {
@@ -1180,6 +1190,9 @@
       }
       .container.row.bottom>.text {
           width: auto;
+      }
+      .inner-text {
+          height: 500px;
       }
       .img:nth-child(1) {
           margin-top: -5%;
