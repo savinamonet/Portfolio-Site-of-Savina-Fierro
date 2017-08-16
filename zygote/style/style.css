@@ -1045,15 +1045,21 @@
       }
       .case-text {
           margin: auto;
-          max-width: 80%;
+          max-width: 85%;
           font-size: 1.3em;
       }
       .inner-text {
           height: 250px;
       }
       .circle {
-          width: 16%;
-          height: 40%;
+          display: none;
+      }
+      .case-blurb {
+          margin-bottom: 1em;
+      }
+      .container.row.bottom.hero,
+      .container.row.bottom.hero2 {
+          max-height: 349px;
       }
       .casecover {
           font-size: 1.7em;
@@ -1117,6 +1123,10 @@
       .line {
           max-width: 100%;
       }
+      .container.row.bottom.hero,
+      .container.row.bottom.hero2 {
+          max-height: 500px;
+      }
   }
   
   @media screen and (min-width: 800px) {
@@ -1147,9 +1157,11 @@
           max-width: 60%;
           font-size: 1em;
       }
+      .case-blurb {
+          margin-bottom: -7%;
+      }
       .circle {
-          height: 198px;
-          width: 198px;
+          display: flex;
       }
   }
   
