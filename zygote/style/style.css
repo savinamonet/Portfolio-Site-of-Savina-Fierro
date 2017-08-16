@@ -1033,12 +1033,12 @@
       .item1 {
           height: 40%;
           background: url(../caseone.jpg) top no-repeat;
-          background-position: 20% 16%;
+          background-position: 38% 76%;
       }
       .item2 {
           height: 30%;
           background: url(../casetwo.jpg) top no-repeat;
-          background-position: 20% 34%;
+          background-position: 80% 34%;
       }
       .item3 {
           height: 30%;
@@ -1048,6 +1048,9 @@
           margin: auto;
           max-width: 80%;
           font-size: 1.3em;
+      }
+      .casecover {
+          font-size: 1.7em;
       }
   }
   
@@ -1101,6 +1104,9 @@
       .item3 {
           height: 350px;
           width: 668px;
+      }
+      .casecover {
+          font-size: inherit;
       }
       .line {
           max-width: 100%;
