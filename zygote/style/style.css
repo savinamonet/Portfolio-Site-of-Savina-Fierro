@@ -310,7 +310,6 @@ h1.section-title a {
 .line {
     display: block;
     width: 100%;
-    max-width: 290px;
     height: 6px;
     background: #DFDFDF;
 }
@@ -834,13 +833,13 @@ body {
 .print2 {
     height: 599px;
     width: 667px;
-    background: url(http://unsplash.it/667/599) top no-repeat;
+    background: url(../bizcards.jpg) top no-repeat;
 }
 
 .print3 {
     height: 350px;
     width: 668px;
-    background: url(http://unsplash.it/668/350) top no-repeat;
+    background: url(../simplesolutions.jpg) top no-repeat;
 }
 
 .casecover h1,
@@ -1090,7 +1089,8 @@ a.caselink {
         margin-top: -24%;
     }
     .skills ul {
-        padding-left: 9px;
+        padding-left: 0;
+        max-width: 30%;
     }
     .container.row.bottom>.text {
         width: 80%;
@@ -1115,15 +1115,18 @@ a.caselink {
         -webkit-column-count: 2;
         column-count: 2;
     }
-    .item1 {
+    .item1,
+    .print1 {
         height: 977px;
         width: auto;
     }
-    .item2 {
+    .item2,
+    .print2 {
         height: 599px;
         width: 667px;
     }
-    .item3 {
+    .item3,
+    .print3 {
         height: 350px;
         width: 668px;
     }
