@@ -910,6 +910,7 @@ a.caselink {
 }
 
 .hvr-sweep-to-bottom:hover,
+.hvr-sweep-to-bottom:focus,
 .hvr-sweep-to-bottom:active {
     color: white;
 }
@@ -1034,6 +1035,9 @@ a.caselink {
         flex-direction: column-reverse;
     }
     .hvr-sweep-to-bottom:focus {
+        background-color: rgba(19, 64, 183, 0.75);
+    }
+    .casecover.cover1.hvr-sweep-to-bottom {
         background-color: rgba(19, 64, 183, 0.75);
     }
     .masonry {
@@ -1231,6 +1235,9 @@ a.caselink {
     }
     .img:nth-child(1) {
         margin-top: -5%;
+    }
+        .casecover.cover1.hvr-sweep-to-bottom {
+        background-color: transparent;
     }
 }
 
