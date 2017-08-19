@@ -1039,11 +1039,9 @@ a.caselink {
     }
     .casecover.cover1.hvr-sweep-to-bottom,
     .casecover.cover2.hvr-sweep-to-bottom,
-    .casecover.cover3.hvr-sweep-to-bottom,
-    .casecover.print1.hvr-sweep-to-bottom,
-    .casecover.print2.hvr-sweep-to-bottom,
-    .casecover.print3.hvr-sweep-to-bottom {
+    .casecover.cover3.hvr-sweep-to-bottom {
         background-color: rgba(19, 64, 183, 0.75);
+        color: white;
     }
     .masonry {
         -webkit-column-count: 1;
@@ -1243,10 +1241,7 @@ a.caselink {
     }
     .casecover.cover1.hvr-sweep-to-bottom,
     .casecover.cover2.hvr-sweep-to-bottom,
-    .casecover.cover3.hvr-sweep-to-bottom,
-    .casecover.print1.hvr-sweep-to-bottom,
-    .casecover.print2.hvr-sweep-to-bottom,
-    .casecover.print3.hvr-sweep-to-bottom {
+    .casecover.cover3.hvr-sweep-to-bottom {
         background-color: transparent;
     }
 }
