@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /collage/
+Disallow: /casetwo.html
