@@ -1034,6 +1034,9 @@ a.caselink {
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
+    .hvr-sweep-to-bottom:focus {
+        background-color: rgba(19, 64, 183, 0.75);
+    }
     .masonry {
         -webkit-column-count: 1;
         column-count: 1;
@@ -1111,10 +1114,6 @@ a.caselink {
     .identity>h2 {
         margin: auto auto auto -23px;
     }
-    .masonry {
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
     .item1,
     .print1 {
         height: 977px;
@@ -1168,6 +1167,10 @@ a.caselink {
         -ms-flex-direction: row;
         flex-direction: row;
     }
+    .masonry {
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
     .case-text {
         margin: auto;
         max-width: 60%;
@@ -1178,6 +1181,9 @@ a.caselink {
     }
     .circle {
         display: flex;
+    }
+    .hvr-sweep-to-bottom:focus {
+        background-color: transparent;
     }
 }
 
