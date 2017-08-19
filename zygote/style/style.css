@@ -1091,10 +1091,6 @@ a.caselink {
         padding: 0;
         margin-top: -24%;
     }
-    .skills ul {
-        padding-left: 0;
-        max-width: 30%;
-    }
     .container.row.bottom>.text {
         width: 80%;
     }
@@ -1179,7 +1175,13 @@ a.caselink {
     .case-blurb {
         margin-bottom: -7%;
     }
+    .skills ul {
+        padding-left: 0;
+        max-width: 30%;
+    }
     .circle {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .hvr-sweep-to-bottom:focus {
