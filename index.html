@@ -200,7 +200,7 @@
                             <h2 class="detailtitle accordion-toggle">Working with a Freelancer</h2>
                             <div class="detailcontainer">
                                 <p class="detailtext">
-                                    When I first started my company, I had enough in my account to cover one month of rent and a bag of rice and beans to stay fed. I didn't have more than a year (and a half) of experience and even more troublesome, the small bit of design work I had wasn't great. As dark as it seemed, I took the plunge and got to work. <br><br> Working out of a back room on an Asus laptop, and a <a class="picpopup" href="#">red peanut desk from IKEA</a>, it was obvious that if I wanted to make a living creating websites I would need to focus on my strengths and find advantages in places others hadn't. I found that those uncommon advantages shared a common strength: communication. Before I could hold my own as a developer, I relied on clear communication and a deep caring for people and projects.<br><br> As my client base and business has grown, I still find myself making a hearty bowl of rice and beans to remember where I came from. When you work with a freelancer, you lose many of the vows of working with an agency, even if you're saving money. Understanding this, I do my best to work in a predictable, professional manner, focused on providing as much transparency into the working process as I possibly can.</p>
+                                    When I first started my company, I had enough in my account to cover one month of rent and a bag of rice and beans to stay fed. I didn't have more than a year (and a half) of experience and even more troublesome, the small bit of design work I had wasn't great. As dark as it seemed, I took the plunge and got to work. <br><br> Working out of a back room on an Asus laptop, and a red peanut desk from IKEA, it was obvious that if I wanted to make a living creating websites I would need to focus on my strengths and find advantages in places others hadn't. I found that those uncommon advantages shared a common strength: communication. Before I could hold my own as a developer, I relied on clear communication and a deep caring for people and projects.<br><br> As my client base and business has grown, I still find myself making a hearty bowl of rice and beans to remember where I came from. When you work with a freelancer, you lose many of the vows of working with an agency, even if you're saving money. Understanding this, I do my best to work in a predictable, professional manner, focused on providing as much transparency into the working process as I possibly can.</p>
                             </div>
                         </div>
                     </div>
@@ -228,25 +228,6 @@
         </section>
     </div>
     <script type="text/javascript" src="js/title.js"></script>
-    <script>
-        $('form#contact_form').validate({
-            messages: {},
-            submitHandler: function(form) {
-                $.ajax({
-                    url: "//formspree.io/savina@hellomonet.com",
-                    method: "POST",
-                    data: $(form).serialize(),
-                    dataType: "json",
-                    success: function(data) {
-                        $("form#contact_form :input").prop("disabled", true);
-                        $('#thanks').show();
-                    }
-                });
-                return false;
-            }
-        });
-
-    </script>
     <script>
         $(document).ready(function($) {
             $('.accordion-wrap').find('.accordion-toggle').click(function() {
