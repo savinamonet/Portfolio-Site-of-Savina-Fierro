@@ -99,53 +99,92 @@
             </div>
             <div class="print2 boxshadow">
                 <div class="casecover cover2 hvr-sweep-to-bottom">
-                    <h1>Business Cards</h1>
-                    <p>Design of current business carsd for myself</p>
+                    <h1>Web Design</h1>
+                    <p>Concept of a portfolio design that never went live. Now, it rests here.</p>
                 </div>
             </div>
             <div class="print3 boxshadow">
                 <div class="casecover cover3 hvr-sweep-to-bottom">
+                    <h1>Digital Collages</h1>
+                    <p>Fun, abstract project that I get to work on in my free time. View more prints
+                        <a href="https://www.instagram.com/savuhnuh/" target="_blank">on my Instagram</a>
+                    </p>
+                </div>
+            </div>
+            <div class="print4 boxshadow">
+                <div class="casecover cover4 hvr-sweep-to-bottom">
+                    <h1>Web Design</h1>
+                    <p>Rejected design for a car race promoter website
+                    </p>
+                </div>
+            </div>
+            <div class="print5 boxshadow">
+                <div class="casecover cover5 hvr-sweep-to-bottom">
                     <h1>Logo Design</h1>
                     <p>Simple Solutions Hypnosis, LLC vector logo design. Created with
                         <a href="http://www.karenmarten.com" target="_blank">KM Designs</a>
                     </p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="site-footer" style="background-color: #1340b7;">
-        <section id="contact" class="contact">
-            <h1 style="color: #fff;">Say hello</h1>
-            <div style="color:#fff;">
-                <ul class="container row footer">
-                    <li><a style="color:#fff;" href="mailto:savina@hellomonet.com?Subject=I%27m%20interested%20in%20your%20service">savina@hellomonet.com</a></li>
-                    <li>206 370 4351</li>
-                    <li>Available for work! 👋</li>
-                </ul>
+            <div class="print6 boxshadow">
+                <div class="casecover cover6 hvr-sweep-to-bottom">
+                    <h1>Web Design</h1>
+                    <p>Rejected design for an online floral delivery service.
+                    </p>
+                </div>
             </div>
-        </section>
-    </div>
-    <script type="text/javascript" src="js/title.js"></script>
-    <script type="text/javascript" src="js/footer.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.casecover').hide();
-            $(".print1").hover(function() {
-                $('.cover1').show();
-            }, function() {
+        </div>
+        <div id="site-footer">
+            <section id="contact" class="contact" style="margin-right: 5%">
+                <h1 style="color: #1340b7;">Say hello</h1>
+                <div class="contactbox borderbox">
+                    <form>
+                        <p>
+                            Hey Savina, it's
+                            <input type="text" name="name" placeholder="name" maxlength="30"> from <input type="text" name="company" placeholder="company or reference" maxlength="30">. I stopped by to tell you
+                            <input type="text" name="message" placeholder="message" maxlength="50"> Feel free to reach me at
+                            <input type="text" name "phone" placeholder="phone" maxlength="30">.
+                            <input type="button" value="Talk to you soon!"></p>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <script type="text/javascript" src="js/title.js"></script>
+        <script type="text/javascript" src="js/footer.js"></script>
+        <script>
+            $(document).ready(function() {
                 $('.casecover').hide();
+                $(".print1").hover(function() {
+                    $('.cover1').show();
+                }, function() {
+                    $('.casecover').hide();
+                });
+                $(".print2").hover(function() {
+                    $('.cover2').show();
+                }, function() {
+                    $('.casecover').hide();
+                });
+                $(".print3").hover(function() {
+                    $('.cover3').show();
+                }, function() {
+                    $('.casecover').hide();
+                });
+                $(".print4").hover(function() {
+                    $('.cover4').show();
+                }, function() {
+                    $('.casecover').hide();
+                });
+                $(".print5").hover(function() {
+                    $('.cover5').show();
+                }, function() {
+                    $('.casecover').hide();
+                });
+                $(".print6").hover(function() {
+                    $('.cover6').show();
+                }, function() {
+                    $('.casecover').hide();
+                });
             });
-            $(".print2").hover(function() {
-                $('.cover2').show();
-            }, function() {
-                $('.casecover').hide();
-            });
-            $(".print3").hover(function() {
-                $('.cover3').show();
-            }, function() {
-                $('.casecover').hide();
-            });
-        });
 
-    </script>
+        </script>
 </body>

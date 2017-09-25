@@ -23,6 +23,14 @@
         .skills {
             opacity: 0;
         }
+        
+        .accordion-wrap .accordion-toggle::after {
+            content: '\000a0+';
+        }
+        
+        .accordion-wrap.active .accordion-toggle::after {
+            content: '\000a0-';
+        }
 
     </style>
     <script>
@@ -88,25 +96,25 @@
             <header>
                 <nav class="container nav">
                     <ul>
-
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
                     </ul>
                 </nav>
             </header>
             <div class="container column">
-                <div class="container row top">
-                    <div class="img"><img class="boxshadow" src="biz_cards.JPG" alt="Monet Business Cards"> </div>
+                <div class="container row top animated fadeIn">
+                    <div class="img"><img src="biz_cards.JPG" alt="Monet Business Cards"> </div>
                     <div class="text">
-                        <h1 class="intro-text">savina monet fierro is a creative designer providing innovative, modern and aesthetic solutions for businesses.</h1>
+                        <h1 class="intro-text boxshadow">savina monet fierro is a creative designer providing innovative, modern and aesthetic solutions for businesses.</h1>
                     </div>
                 </div>
-                <div class="container row bottom">
+                <div class="container row bottom animated fadeIn">
                     <div class="text">
                         <h1 class="intro-tag">Let's turn some heads.</h1>
                     </div>
-                    <div class="img"><img class="boxshadow" style=" -webkit-animation-delay: 0.25s; /* Safari 4.0 - 8.0 */
-    animation-delay: 0.25s;" src="rwc_mobile.jpg" alt="RWC Deliver on mobile"></div>
+                    <div class="img animated fadeInUp"><img src="rwc_mobile.png" alt="RWC Deliver on mobile"></div>
                 </div>
-                <div class="skills animated fadeInDown">
+                <div class="skills animated fadeInDown boxshadow">
                     <ul>
                         <li>
                             <h1 class="title">digital</h1>
@@ -136,89 +144,127 @@
         </section>
         <section id="work">
             <div class="container portfolio">
-                <!-- <div class="square left">
+                <div class="square left">
                     <div class="inner-text container">
-                        <h1 class="section-title"><a href="print.html">PRINT</a></h1>
+                        <h1 class="section-title"><a href="digital.html">WORK</a></h1>
                     </div>
-                </div>-->
+                </div>
                 <div class="square right">
                     <div class="inner-text container">
-                        <h1 class="section-title"><a href="digital.html">View my Work</a></h1>
+                        <h1 class="section-title"><a href="print.html">PLAY</a></h1>
                     </div>
                 </div>
             </div>
         </section>
         <section class="about" id="about">
-            <h1 style="color: #1340b7;">Nice to meet you</h1>
-            <div class="container about">
-                <div class="about-text">
-                    <p>I'm Savina, a self-taught multi-disciplinary designer. I create efficient and innovative experiences that balance user needs and business goals. All in all, no matter what discipline, I truly enjoy the act of creation, and I love collaborating with others.</p>
-                    <p>When I'm not stuck in front of a screen, I enjoy hiking and creating brutalist collages.
-                    </p>
-                    <div class="container">
-                        <div class="container row skill">
-                            <ul class="skill-detail">
-                                <li>Wordpress <span class="line"><span class="progress animated growRight" id="wordpress"
-									style="max-width: 70%;"></span></span>
-                                </li>
-                                <li>HTML/CSS <span class="line"><span class="progress animated growRight" i="html"
-									style="max-width: 90%;"></span></span>
-                                </li>
-                                <li>Marketing <span class="line"><span class="progress animated growRight" id="marketing"
-									style="max-width: 80%;"></span></span>
-                                </li>
-                                <li>Javascript <span class="line"><span class="progress animated growRight" id="javascript"
-									style="max-width: 60%;"></span></span>
-                                </li>
-                                <li>Graphic Design <span class="line"><span class="progress animated growRight" id="graphic"
-									style="max-width: 70%;"></span></span>
-                                </li>
-                            </ul>
+            <div class="sectionwrap">
+                <h1 class="borderbox" style="color: #1340b7;">Nice to meet you</h1>
+                <div class="container about">
+                    <div class="about-text borderbox">
+                        <p>I'm Savina, a designer-who-codes. I create efficient and innovative experiences that balance user needs and business goals. All in all, no matter what discipline, I truly enjoy the act of creation, and I love collaborating with others.</p>
+                        <p>When I'm not sitting in front of a screen, I enjoy hiking the beautiful Oregon mountain territory and creating digital collages that trip people out.
+                        </p>
+                        <a href="#">View my resume</a>
+                        <div class="container">
+                            <div class="container row skill">
+                                <ul class="skill-detail">
+                                    <li>Wordpress <span class="line"><span class="progress animated growRight" id="wordpress" style="max-width: 70%;"></span></span>
+                                    </li>
+                                    <li>HTML/CSS <span class="line"><span class="progress animated growRight" i="html" style="max-width: 90%;"></span></span>
+                                    </li>
+                                    <li>Marketing <span class="line"><span class="progress animated growRight" id="marketing" style="max-width: 80%;"></span></span>
+                                    </li>
+                                    <li>Javascript <span class="line"><span class="progress animated growRight" id="javascript" style="max-width: 60%;"></span></span>
+                                    </li>
+                                    <li>Graphic Design <span class="line"><span class="progress animated growRight" id="graphic" style="max-width: 70%;"></span></span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div><img class="boxshadow" src="self_image.jpg" alt="Self-portrait"></div>
+                    <div class="container flex aboutright">
+                        <div class="container borderbox detailbox accordion-wrap">
+                            <h2 class="detailtitle accordion-toggle">Process</h2>
+                            <div class="detailcontainer">
+                                <h3>Investigate</h3>
+                                <p class="detailtext">Ask questions. Ask questions, and then when you think you know the answer, question that. Investigating the project gets to the core of the problem and allows us to empathize with our audience. There's a bit of magic involved, and if there weren't I'd be a physicist, not a developer. Prepare to be both excited by the potential and then overwhelmed at how much diligence is involved in working out the details.</p>
+                                <h3>Imagine</h3>
+                                <p class="detailtext">To be honest, I’m not entirely sure how the design phase works, other than it follows a spark and then there is an outcome. It's not work to be taken lightly, design work, especially on larger projects, goes through multiple rounds of revisions. Once we discover the core of the project's problems, our creativity flows to fill in our audience's pain points.</p>
+                                <h3>Improve</h3>
+                                <p class="detailtext">
+                                    I have a confession to make, this phse is the most overlooked, and often most important phose of any project. Because of this, there is an abundance of mediocre work in the wild. During the design phase, too many people are conscerned about making the website more "pretty". We have to work harder than that. I've personally struggled with this phase of the project in the past, but after too many projects ended in the same way, I refused to let it happen again. I ask all of my clients to do the same. At the crucial moment at which you no longer feel it's fun, it's essential to refocus your vision. There’s a difference between not being able to afford something and not considering it in the first place.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="container borderbox accordion-wrap">
+                            <h2 class="detailtitle accordion-toggle">Working with a Freelancer</h2>
+                            <div class="detailcontainer">
+                                <p class="detailtext">
+                                    When I first started my company, I had enough in my account to cover one month of rent and a bag of rice and beans to stay fed. I didn't have more than a year (and a half) of experience and even more troublesome, the small bit of design work I had wasn't great. As dark as it seemed, I took the plunge and got to work. <br><br> Working out of a back room on an Asus laptop, and a <a class="picpopup" href="#">red peanut desk from IKEA</a>, it was obvious that if I wanted to make a living creating websites I would need to focus on my strengths and find advantages in places others hadn't. I found that those uncommon advantages shared a common strength: communication. Before I could hold my own as a developer, I relied on clear communication and a deep caring for people and projects.<br><br> As my client base and business has grown, I still find myself making a hearty bowl of rice and beans to remember where I came from. When you work with a freelancer, you lose many of the vows of working with an agency, even if you're saving money. Understanding this, I do my best to work in a predictable, professional manner, focused on providing as much transparency into the working process as I possibly can.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="contact" class="contact">
-            <h1 style="color: #1340b7;">Say hello</h1>
-            <div>
-                <ul class="container row footer">
-                    <li><a href="mailto:savina@hellomonet.com?Subject=I%27m%20interested%20in%20your%20service">savina@hellomonet.com</a></li>
-                    <li>206 370 4351</li>
-                    <li>Available for work! 👋</li>
-                </ul>
+            <div class="sectionwrap">
+                <h1 class="borderbox" style="color: #1340b7;">Say hello</h1>
+                <div class="contactbox borderbox">
+                    <form id="contact_form">
+                        <p id='thanks' style='display: none;'>
+                            Thanks for reaching out, I will be in touch soon!
+                        </p>
+                        <p>
+                            Hey Savina, it's
+                            <input type="text" name="name" placeholder="name" maxlength="30"> from <input type="text" name="company" placeholder="company or reference" maxlength="30">. I stopped by to tell you
+                            <input type="text" name="message" placeholder="message" maxlength="50"> Feel free to reach me at
+                            <input type="text" name="_replyto" placeholder="email" maxlength="30">.
+                            <input type="text" name="_gotcha" style="display:none" />
+                            <input type="button" value="Talk to you soon!"></p>
+                    </form>
+                </div>
             </div>
         </section>
     </div>
     <script type="text/javascript" src="js/title.js"></script>
     <script>
-        var $animation_elements = $('.skills');
-        var $window = $(window);
-
-        function check_if_in_view() {
-            var window_height = $window.height();
-            var window_top_position = $window.scrollTop();
-            var window_bottom_position = (window_top_position + window_height);
-
-            $.each($animation_elements, function() {
-                var $element = $(this);
-                var element_height = $element.outerHeight();
-                var element_top_position = $element.offset().top;
-                var element_bottom_position = (element_top_position + element_height);
-
-                //check to see if this current container is within viewport
-                if ((element_bottom_position >= window_top_position) &&
-                    (element_top_position <= window_bottom_position)) {
-                    $element.addClass('fadeInDown');
-                } else {
-                    $element.removeClass('fadeInDown');
-                }
-            });
-        }
-
-        $window.on('scroll resize', check_if_in_view);
-        $window.trigger('scroll');
+        $('form#contact_form').validate({
+            messages: {},
+            submitHandler: function(form) {
+                $.ajax({
+                    url: "//formspree.io/savina@hellomonet.com",
+                    method: "POST",
+                    data: $(form).serialize(),
+                    dataType: "json",
+                    success: function(data) {
+                        $("form#contact_form :input").prop("disabled", true);
+                        $('#thanks').show();
+                    }
+                });
+                return false;
+            }
+        });
 
     </script>
+    <script>
+        $(document).ready(function($) {
+            $('.accordion-wrap').find('.accordion-toggle').click(function() {
+
+                //Expand
+                $(this).next().toggle('slow');
+                $(this)
+                    .closest('.accordion-wrap').addClass('active')
+                    .siblings().removeClass('active');
+
+                //hide other panels
+                $(".detailcontainer").not($(this).next()).slideUp('fast');
+
+            });
+        });
+
+    </script>
+
     <script>
         var $animation_element = $('.progress');
         var $window = $(window);
