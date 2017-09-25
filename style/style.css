@@ -1085,7 +1085,7 @@ form {
     padding: 10px;
 }
 
-.contactbox input[type="button"] {
+.contactbox input[type="submit"] {
     border: 1px solid #1340b7;
     font-size: 0.7em;
     font-family: inherit;
@@ -1099,8 +1099,8 @@ form {
     transition: box-shadow 0.5s;
 }
 
-.contactbox input[type="button"]:hover,
-.contactbox input[type="button"]:focus {
+.contactbox input[type="submit"]:hover,
+.contactbox input[type="submit"]:focus {
     cursor: pointer;
     -webkit-box-shadow: 3px 3px 0px 0px rgba(19, 64, 183, 0.75);
     -moz-box-shadow: 3px 3px 0px 0px rgba(19, 64, 183, 0.75);
