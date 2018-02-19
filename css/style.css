@@ -6,7 +6,7 @@ body.menu-show {
 
 a,
 a:hover {
-    color: #539DDB
+    color: #F2A536;
 }
 
 body,
@@ -136,7 +136,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Rokkitt, cursive
+    font-family: 'Shrikhand', cursive;
 }
 
 span {
@@ -159,7 +159,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: rgba(0, 0, 0, .8);
+    color: #F2A536;
     font-weight: 300;
     margin: 0 0 30px
 }
@@ -208,7 +208,7 @@ h6 {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, .92);
+    background: rgba(163, 109, 38, 0.92);
     padding: 3em 0;
     z-index: 1002;
     text-align: center;
@@ -257,6 +257,10 @@ h6 {
     background: rgba(0, 0, 0, .7)
 }
 
+footer.section-title {
+    color: white;
+}
+
 #fh5co-main-nav .fh5co-nav-toggle i {
     top: 19px!important;
     left: 0!important;
@@ -296,7 +300,7 @@ h6 {
 }
 
 h2.intro-heading.caseheading {
-    color: rgba(73, 105, 189, .9)
+    color: #F2A536;
 }
 
 #fh5co-main-nav ul li {
@@ -308,7 +312,7 @@ h2.intro-heading.caseheading {
 #fh5co-main-nav ul li a {
     display: block;
     width: 100%;
-    color: rgba(73, 105, 189, .8);
+    color: #d2b993;
     font-size: 30px;
     padding: 10px 20px
 }
@@ -316,7 +320,7 @@ h2.intro-heading.caseheading {
 #fh5co-main-nav ul li a:active,
 #fh5co-main-nav ul li a:focus,
 #fh5co-main-nav ul li a:hover {
-    color: rgba(0, 0, 0, .9);
+    color: #F2A536;
     outline: 0;
     text-decoration: none
 }
@@ -607,7 +611,7 @@ header .fh5co-navbar-brand {
 header .fh5co-navbar-brand h1 {
     width: 20%;
     display: block;
-    font-family: Rokkitt, cursive;
+    font-family: 'Shrikhand', cursive;
     margin-bottom: 0
 }
 
@@ -905,7 +909,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 #fh5co-hero .flexslider .slider-text>.slider-text-inner h2 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 400;
     color: #fff
 }
@@ -935,7 +939,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 .fh5co-heading h2,
 .intro-heading {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300;
     line-height: 1.5
 }
@@ -947,16 +951,20 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 #fh5co-hero .flexslider .slider-text>.slider-text-inner .desc {
     padding: 5em;
-    background: rgba(73, 105, 189, .9);
+    background: rgba(166, 164, 54, .9);
     -webkit-box-shadow: 0 10px 30px -13px rgba(0, 0, 0, .75);
     -moz-box-shadow: 0 10px 30px -13px rgba(0, 0, 0, .75);
     box-shadow: 0 10px 30px -13px rgba(0, 0, 0, .75)
 }
 
+#fh5co-hero .flexslider .slider-text>.slider-text-inner .desc a {
+    color: hsla(35, 88%, 78%, 1);
+}
+
 @media screen and (max-width:992px) {
     #fh5co-hero .flexslider .slider-text>.slider-text-inner .desc {
         padding: 25px;
-        background: rgba(73, 105, 189, .9);
+        background: rgba(166, 164, 54, .9);
         -webkit-box-shadow: 0 10px 30px -13px transparent;
         -moz-box-shadow: 0 10px 30px -13px transparent;
         box-shadow: 0 10px 30px -13px transparent
@@ -1044,7 +1052,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 .post-entry .desc {
     padding: 5em;
-    background: rgba(73, 105, 189, .9);
+    background: rgba(166, 164, 54, .9);
     -webkit-box-shadow: 0 10px 30px -13px rgba(0, 0, 0, .75);
     -moz-box-shadow: 0 10px 30px -13px rgba(0, 0, 0, .75);
     box-shadow: 0 10px 30px -13px rgba(0, 0, 0, .75)
@@ -1052,13 +1060,17 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 .post-entry .desc h3 {
     color: #fff;
-    font-size: 40px;
+    font-size: 33px;
     line-height: 54px
 }
 
 .post-entry .desc p {
     color: rgba(255, 255, 255, .8);
     margin-bottom: 0
+}
+
+.post-entry .desc a {
+    color: hsla(35, 88%, 78%, 1);
 }
 
 .post-entry .desc .date {
@@ -1096,7 +1108,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
     padding: 0;
     margin: 0;
     color: #fff;
-    background: rgba(0, 0, 0, .5)
+    background: rgba(242, 165, 54, 0.7);
 }
 
 .work .view i,
@@ -1160,13 +1172,9 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .row.animate-box.fadeInUp.animated.history {
-    background-color: rgba(73, 105, 189, .9);
+    background-color: white;
     margin-top: 5em;
     padding: 2em
-}
-
-.about-content p {
-    color: #fff
 }
 
 .services-cta h3 {
@@ -1176,7 +1184,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 
 .services-cta {
     padding: 1em 2em;
-    border: 2px solid rgba(73, 105, 189, .9)
+    border: 2px solid #F2A536;
 }
 
 .service-background {
@@ -1189,7 +1197,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 .service-background span.fh5co-counter {
-    color: rgba(73, 105, 189, .9)
+    color: #F2A536;
 }
 
 .row.servicestable {
@@ -1197,7 +1205,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
 }
 
 span.blue {
-    color: #539DDB;
+    color: #A6A436;
 }
 
 ul.services-table {
@@ -1206,7 +1214,7 @@ ul.services-table {
 }
 
 .services-table li {
-    border-top: solid #539DDB 1px;
+    border-top: solid #A6A436 1px;
     padding: .3em 0
 }
 
@@ -1372,7 +1380,7 @@ ul.services-table {
 
 .contactcontainer {
     padding: 6em;
-    border: 2px solid rgba(73, 105, 189, .9)
+    border: 2px solid #F2A536;
 }
 
 ul.contact-form {
@@ -1394,7 +1402,7 @@ input#contact::placeholder {
 
 input.submit {
     background-color: #fff;
-    border: 2px solid #000;
+    border: 2px solid #F2A536;
     padding: .5em 1em
 }
 
@@ -1454,7 +1462,12 @@ input[type=text] {
 
 #footer .section-title {
     font-size: 24px;
-    font-weight: 400
+    font-weight: 400;
+    color: white;
+}
+
+#footer h3 {
+    color: white;
 }
 
 #footer ul {
@@ -1488,7 +1501,7 @@ input[type=text] {
 }
 
 #footer a:focus, #footer a:hover {
-    color: #539DDB
+    color: #F2A536;
 }
 
 #footer .form-inline .form-group {
