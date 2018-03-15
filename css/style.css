@@ -59,6 +59,16 @@ footer p {
     color: #fff
 }
 
+img {
+    height: auto;
+    width: 100%;
+}
+
+.logoimg {
+    width: auto;
+    height: auto;
+}
+
 .scroll-left p {
     position: absolute;
     margin: 0;
@@ -667,13 +677,65 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
     margin-bottom: 0
 }
 
+.contactcontainer {
+    padding: 6em;
+    border: 2px solid #F2A536;
+}
+
+.fh5co-counters .fh5co-counter {
+    font-size: 40px;
+    display: block;
+    color: #fff;
+    font-family: Georgia, serif;
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: .3em
+}
+
 @media screen and (max-width:992px) {
     header .fh5co-navbar-brand .fh5co-social-icon a i {
         color: rgba(255, 255, 255, .5)
     }
+    .contactcontainer {
+        padding: 4em;
+        border: 2px solid #F2A536;
+    }
+    input#contact {
+        width: 100%;
+        font-size: 1em;
+    }
+    .fh5co-counters .fh5co-counter {
+        font-size: 40px;
+        display: block;
+        color: #fff;
+        font-family: Georgia, serif;
+        width: 100%;
+        font-weight: 700;
+        margin-bottom: .3em
+    }
+    #fh5co-hero {
+        margin-bottom: 5em;
+    }
 }
 
 @media screen and (max-width:480px) {
+    #fh5co-hero {
+        margin-bottom: 3em;
+    }
+    .intro-heading {
+        font-size: 20px;
+    }
+    .fh5co-counters .fh5co-counter {
+        font-size: 25px;
+    }
+    .contactcontainer {
+        padding: 2em;
+        border: 2px solid #F2A536;
+    }
+    input#contact {
+        width: 100%;
+        font-size: 0.75em;
+    }
     header .fh5co-navbar-brand .fh5co-social-icon {
         display: none
     }
@@ -741,7 +803,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
     .fh5co-nav-toggle i,
     .fh5co-nav-toggle i::after,
     .fh5co-nav-toggle i::before {
-        background: rgba(255, 255, 255, .8)
+        background: rgba(242, 165, 54, .8);
     }
 }
 
@@ -1152,16 +1214,6 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
     font-size: 40px
 }
 
-.fh5co-counters .fh5co-counter {
-    font-size: 40px;
-    display: block;
-    color: #fff;
-    font-family: Georgia, serif;
-    width: 100%;
-    font-weight: 700;
-    margin-bottom: .3em
-}
-
 .fh5co-counters .fh5co-counter-label {
     color: #fff;
     text-transform: uppercase;
@@ -1376,11 +1428,6 @@ ul.services-table {
 
 .contactcontainer h3 {
     font-size: 40px
-}
-
-.contactcontainer {
-    padding: 6em;
-    border: 2px solid #F2A536;
 }
 
 ul.contact-form {
