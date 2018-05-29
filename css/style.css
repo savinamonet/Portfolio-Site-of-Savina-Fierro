@@ -69,6 +69,48 @@ img {
     height: auto;
 }
 
+.mockup_parallax {
+    height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9% 0;
+    margin-bottom: 4em;
+}
+
+a.button2 {
+    display: inline-block;
+    padding: 0.5em 3em;
+    border: 0.16em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+a.button2:hover {
+    color: #DDDDDD;
+    border-color: #DDDDDD;
+}
+
+a.button2:active {
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+@media all and (max-width:30em) {
+    a.button2 {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
 .scroll-left p {
     position: absolute;
     margin: 0;
